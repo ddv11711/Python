@@ -1,6 +1,7 @@
 import math
-print("t<x")
-x=int(input("x="))
-t=int(input("t="))
-z=math.sqrt((12*math.pow(x,4)*0.2/math.sqrt(t)-2))*math.sin(t)
-print("z= {0:.2f}".format(z))
+x=float(input ("x="))
+y=float(input ("y="))
+z=float(input ("z="))
+s=((math.fabs(math.cos(x)-math.cos(y)))**(1+2*(math.sin(y)**2)))*(1+z+(z**2)/2+(z**3)/3+(z**4)/4)
+print("s= {0:.5f}".format (s))
+
